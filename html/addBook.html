@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Home</a>
+        <a href="create.html">Create Account</a>
+        <a id="login" href="login.html">Login</a>
+        <a href="addBook.html">Add Book</a>
+        <a class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container createContainer">
+        <div class="card" style="margin-top:5rem;" id="addForm">
+            <h1 id="create" text-align="center">Add Book</h1>
+            <hr>
+            <form action="" id="input_data">
+                <input type="text" required placeholder="Book name" class="data" name="" id="bookname">
+                <input type="text" required placeholder="Author name" class="data" name="" id="authorname">
+                <input type="number" required placeholder="Number of book" class="data" name="" id="numOfBook"><br><br>
+                <button type="submit" class="data btn" id="Add">Add Book</button>
+                <button type="button" class="data btn" id="showlist">Show list</button>
+                <!-- <p id="bott_text_card">New student <a href="create.html" target="_blank">Create Account</a></p> -->
+            </form>
+            <i id="warning"></i>
+        </div>
+        <div class="list" >
+            <table id="listOfBook" border="1px" width="100%">
+                <thead>
+                    <tr>
+                        <th>S.N.</th>
+                        <th>Book Name</th>
+                        <th>Author Name</th>
+                        <th>Number of Book</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <marquee id="note" behavior="scroll" scrollamount="5">All the students has reminded to return book on time
+            otherwise you will have to pay Rs5 for each day for one book including holidays</marquee>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

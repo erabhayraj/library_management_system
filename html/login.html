@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Home</a>
+        <a href="create.html">Create Account</a>
+        <a id="login" href="login.html">Login</a>
+        <a href="addBook.html">Add Book</a>
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container createContainer">
+        <div class="card" style="margin-top:5rem;" id="login_data">
+            <h1 id="create" text-align="center">Login</h1>
+            <hr>
+            <form action="" id="input_data" >
+                <input type="number" required placeholder="Enter your registration no."class="data" name="" id="login_Reg">
+                D.O.B: <input type="date" required style="width:80%" placeholder="Enter your D.O.B"class="data"name="" id="login_DOB"><br>
+                <button type="submit" class="data btn" ><a id="personalPage">Login</a></button>
+                <p id="bott_text_card">New student <a href="html/create.html">Create Account</a></p>
+                <i id="warning"></i>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <marquee id="note" behavior="scroll"scrollamount="5">All the students has reminded to return book on time otherwise you will have to pay Rs5 for each day for one book including holidays</marquee>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

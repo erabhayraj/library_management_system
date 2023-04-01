@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Home</a>
+        <a href="create.html">Create Account</a>
+        <a href="login.html">Login</a>
+        <a href="addBook.html">Add Book</a>
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container createContainer">
+        <div class="card" id="register">
+            <h1 id="create" text-align="center">Create Account</h1>
+            <hr>
+            <form action="" id="input_data">
+                <input type="number" required="true"  placeholder="Enter your registration no."class="data" name="" id="Reg">
+                <input type="text" required placeholder="Enter your name"class="data" name="" id="Name">
+                <input type="email" required placeholder="Enter your email"class="data" name="" id="Email">
+                <input type="number" required placeholder="Enter your Mobile no."class="data" name="" id="Mobi">
+                <input type="text" required placeholder="Enter your branch"class="data" name="" id="Branch">
+                <input type="text" required placeholder="Enter your session"class="data" name="" id="Session">
+                D.O.B: <input type="date" style="width:80%" required placeholder="Enter your D.O.B"class="data"name="" id="Date"><br>
+                <button type="submit" class="data btn">Create</button>
+                <p id="bott_text_card">Already has an account <a href="html/login.html" target="_blank">Login</a></p>
+            </form>
+            <i id="warning"></i>
+        </div>
+    </div>
+    <div class="footer">
+        <marquee id="note" behavior="scroll"scrollamount="5">All the students has reminded to return book on time otherwise you will have to pay Rs5 for each day for one book including holidays</marquee>
+    </div>
+    <script src="../js/create.js"></script>
+</body>
+
+</html>

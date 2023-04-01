@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a  href="personal.html" class="active" id="personalAccount"></a>
+        <a  style="position:absolute;top:0px;right:0px;"href="html/login.html" class="active" id="personalAccount">Log Out</a>
+        <!-- <a href="create.html">Create Account</a> -->
+        <!-- <a id="login" href="login.html">Login</a> -->
+        <!-- <a href="addBook.html">Add Book</a> -->
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <div class="container">
+        <div class="bodyline">
+            <div class="card accountPage"  id="personalPage">
+                <h1 id="accountPageHead" text-align="center"></h1>
+                <hr>
+            </div>
+            <div class="card List"  id="list">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <marquee id="note" behavior="scroll"scrollamount="5">All the students has reminded to return book on time otherwise you will have to pay Rs5 for each day for one book including holidays</marquee>
+    </div>
+    <script src="../js/personal.js"></script>
+</body>
+
+</html>
